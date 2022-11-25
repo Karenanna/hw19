@@ -1,8 +1,8 @@
-public class Transport {
+public abstract class  Transport {
     private String brand;
     private String model;
-    private final int productionYear;
-    private final String produtionCountry;
+    private  int productionYear;
+    private  String produtionCountry;
     private String color;
     private int maxSpeed;
 
@@ -16,6 +16,8 @@ public class Transport {
         this.color = color;
         this.maxSpeed = maxSpeed;
     }
+    public abstract void refill();
+
 
     public String getBrand() {
         return brand;
@@ -31,6 +33,9 @@ public class Transport {
 
     public void setModel(String model) {
         if (model == null || model.isBlank() || model.isEmpty()){
+            this.model = "default";
+        }else {
+
         }
         this.model = model;
     }

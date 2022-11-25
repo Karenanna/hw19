@@ -1,11 +1,11 @@
 import java.security.Key;
 
 public class Car{
-    private final String brand;
-    private final String model;
+    private  String brand;
+    private  String model;
     private double engineVolume;
     private String color;
-    private final int productionYear;
+    private  int productionYear;
     private String produtionCountry;
 
     public double getEngineVolume() {
@@ -16,36 +16,35 @@ public class Car{
         this.engineVolume = engineVolume;
     }
 
-    public String getColor() {
-        return color;
+      public String getColor() {
+          return color;
     }
 
     public void setColor(String color) {
         this.color = color;
     }
 
-    public String getProdutionCountry() {
-        return produtionCountry;
+      public String getProdutionCountry() {
+           return produtionCountry;
+    }
+
+    public Car(String brand, String model, int productionYear, String produtionCountry,
+               String color, int maxSpeed) {
     }
 
     public void setProdutionCountry(String produtionCountry) {
         this.produtionCountry = produtionCountry;
-    }
-    public Car(String brand, String model,
-               double engineVolume, String color,
-               int productionYear, String produtionCountry) {
-
-
         if (brand == null) {
             this.brand = "default";
         } else
-            this.brand = brand;
+           this.brand = brand;
 
         if (model == null) {
             this.model = "default";
         } else {
-            this.model = model;
+           this.model = model;
         }
+
         if (Double.compare(engineVolume, 0) == 0) {
             this.engineVolume = 1.5;
         } else {
@@ -57,26 +56,34 @@ public class Car{
             this.color = color;
         }
         if (Double.compare(productionYear, 0) == 0) {
-            this.productionYear = 2000;
-        } else {
+              this.productionYear = 2000;
+          } else {
             this.productionYear = productionYear;
-        }
+                 }
         if (produtionCountry == null) {
             this.produtionCountry = "default";
         } else {
             this.produtionCountry = produtionCountry;
         }
+        @Override
+        public void refill(int typeOfFuel){
+
+        }
+
     }
 
-    public int getProductionYear() {
-        return productionYear;
+      public int getProductionYear() {
+          return productionYear;
     }
 
-    public String getModel() {
-        return model;
-    }
+      public String getModel() {
+          return model;
+      }
 
-    public String getBrand() {
-        return brand;
-    }
+      public String getBrand() {
+          return brand;
+      }
 }
+
+
+
