@@ -1,4 +1,8 @@
-public class Train extends Transport{
+package transport;
+
+import autoresing.Transport;
+
+public class Train extends Transport {
 //    public String brand;
 //   public String model;
 // public int productionYear;
@@ -18,7 +22,7 @@ public class Train extends Transport{
         this.cost=cost;
         this.vagons=vagons;
     }
-    @Override
-    public void refill(String  typeOfFuel){
+   // @Override
+  //  public void refill(String  typeOfFuel){
 }
 

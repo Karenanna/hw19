@@ -1,10 +1,14 @@
+package autoresing;
+
+import transport.Train;
+
 public class Main {
     public static void main(String[] args) {
-        Car grande = new Car("Lada", "Grande", 1.7, "желтый", 2015, "Россия");
-        Car audi = new Car("Audi", "A8 50L TDI", 3.0, "черный", 2020, "Германия");
-        Car bmw = new Car("Bmw", "Z8", 3.0, "черный", 2021, "Германия");
-        Car kia = new Car("Kia", "Sportage4", 2.4, "красный", 2018, "Южная Корея");
-        Car hyundai = new Car("Hyundai", "Avante", 1.6, "красный", 2016, "Южная Корея");
+        Bus.Car grande = new Bus.Car("Lada", "Grande", 1.7, "желтый", 2015, "Россия");
+        Bus.Car audi = new Bus.Car("Audi", "A8 50L TDI", 3.0, "черный", 2020, "Германия");
+        Bus.Car bmw = new Bus.Car("Bmw", "Z8", 3.0, "черный", 2021, "Германия");
+        Bus.Car kia = new Bus.Car("Kia", "Sportage4", 2.4, "красный", 2018, "Южная Корея");
+        Bus.Car hyundai = new Bus.Car("Hyundai", "Avante", 1.6, "красный", 2016, "Южная Корея");
 
         Train lastochka = new Train("Ласточка","B-901",2011,
                 "Россия", 301,"желтый","Белорусский вокзал",
@@ -44,7 +48,7 @@ public class Main {
 
     }
 
-    private static void printInfo(Car car) {
+    private static void printInfo(Bus.Car car) {
         System.out.println(
               //  car.getBrand() + " " +
               //          car.getModel() +
