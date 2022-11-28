@@ -7,6 +7,7 @@ public class DriverC < T extends Bus> extends Driver {
         @Override
         public String getPitStop() {
             return "Машина завелась";}
+
     }
     @Override
     public String getBestLapTime() {

@@ -14,6 +14,7 @@ public class Truck extends Transport implements Competing {
         this.maxSpeed = maxSpeed1;
         this.bestLapTime = bestLapTime;
 
+
         @Override
     void startToMove() {System.out.println("Truck started");}
 

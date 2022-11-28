@@ -7,6 +7,7 @@ public abstract class Driver {
 
     public String getName() {return name;}
 
+
     public Boolean getHasLicense() {return hasLicense;}
 
     public Integer getExperience() {return experience;}

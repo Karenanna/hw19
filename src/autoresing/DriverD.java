@@ -5,6 +5,7 @@ public class DriverD < T extends Truck> extends Driver{
         super(name, hasLicense, experience);
         @Override
         public String getPitStop() {
+
             return "Машина завелась";}
     }
     @Override

@@ -8,7 +8,7 @@ public class DriverB < T extends Car> extends Driver {
 @Override
     public String getPitStop() {
         return "Машина завелась";}
-    }
+}
 @Override
     public String getBestLapTime() {
         return "Машина остоновилась";}

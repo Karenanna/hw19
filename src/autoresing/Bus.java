@@ -4,6 +4,7 @@ public class Bus extends Transport implements Competing {
     private final Integer maxSpeed;
     private final Integer pitStopTime;
 
+
     private final Integer bestLapTime;
 
     public Bus(String brand, String model, Integer enginePower, Integer maxSpeed,
