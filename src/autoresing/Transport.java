@@ -5,6 +5,7 @@ import static autoresing.ValidateUtils.volidateString;
 public abstract class  Transport {
 
     private String brand;
+
     private String model;
     private final Integer enginePower;
 

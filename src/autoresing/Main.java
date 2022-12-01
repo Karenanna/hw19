@@ -24,6 +24,7 @@ public class Main {
         System.out.println(man);
         System.out.println(kamaz);
 
+
         DriverB<Car> boyko = new DriverB<>("Бойко Сергей Андреевич", true, 10);
         DriverB<Car> golunov = new DriverB<>("Голунов Андрей Викторович", true, 14);
         DriverD<Bus> agapov = new DriverD<Bus>("Агапов Василий Петрович", true, 12);

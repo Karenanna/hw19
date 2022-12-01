@@ -2,6 +2,7 @@ package autoresing;
 
 public class DriverD < T extends Truck> extends Driver{
     public DriverD(String name, Boolean hasLicense, Integer experience) {
+
         super(name, hasLicense, experience);
         @Override
         public String getPitStop() {

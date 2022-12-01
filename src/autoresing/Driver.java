@@ -4,6 +4,7 @@ public abstract class Driver <T> {
     public String name;
     public T carType;
     private Boolean hasLicense;
+
     private Integer experience;
 
     public String validateStringParametrs(String value) {

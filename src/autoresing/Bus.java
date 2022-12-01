@@ -2,6 +2,7 @@ package autoresing;
 
 public class Bus extends Transport implements Competing {
     private final Integer maxSpeed;
+
     private final Integer pitStopTime;
 
 

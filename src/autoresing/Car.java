@@ -6,6 +6,7 @@ public class Car extends Transport implements Competing {
     private final Integer pitStopTime;
 
 
+
     private final Integer bestLapTime;
 
     public Car(String brand, String model, Integer enginePower,

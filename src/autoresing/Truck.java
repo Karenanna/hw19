@@ -6,6 +6,7 @@ public class Truck extends Transport implements Competing {
 
     private final Integer bestLapTime;
 
+
     public Truck(String brand, String model, int productionYear,
                  String produtionCountry, String color, int maxSpeed, Integer pitStopTime,
                  Integer maxSpeed1, Integer bestLapTime) {
